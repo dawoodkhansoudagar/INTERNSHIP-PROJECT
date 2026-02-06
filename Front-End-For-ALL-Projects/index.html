@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="robo">
+            <img src="../Front-End-For-ALL-Projects/img/robo.png" alt="Robot Icon" class="robo-icon">
+            AI Voice Assistant
+        </h1>
+
+
+        <div id="responseBox">
+            <p id="response">Ask me anything...</p>
+        </div>
+
+        <div class="input-bar">
+            <input 
+                type="text" 
+                id="textInput" 
+                placeholder="Ask anything..." 
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+            />
+            <button class="icon-btn send-btn" onclick="sendText()">
+                <img src="../Front-End-For-ALL-Projects/img/send.png" alt="Send">
+            </button>
+
+            <button id="micBtn" class="icon-btn mic-btn" onclick="startVoice()">
+                <img id="micIcon" src="../Front-End-For-ALL-Projects/img/microphone.png" alt="Mic">
+            </button>
+
+
+            <button class="icon-btn cancel-btn" onclick="stopAll()">
+                <img src="../Front-End-For-ALL-Projects/img/close.png" alt="Cancel">
+            </button>
+        </div>
+
+    </div>
+
+    <script src="../Front-End-For-ALL-Projects/script.js"></script>
+
+    <!-- Mask Detection Corner Button -->
+    <a href="../Mask-Detection/mask.html" class="mask-corner">
+        ➤
+        <span>Mask Detection</span>
+    </a>
+
+</body>
+</html>

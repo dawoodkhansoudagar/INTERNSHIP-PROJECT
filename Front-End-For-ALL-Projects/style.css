@@ -1,0 +1,143 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #d6b9fb;
+}
+
+.container {
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.mask-corner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0d6efd;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.mask-corner:hover {
+    background: #084298;
+    transform: scale(1.05);
+}
+
+.mask-corner span {
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+
+#responseBox {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 120px;
+    max-height: 250px; 
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+#response {
+    font-size: 16px;
+    color: #333;
+}
+
+.robo {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.robo-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.input-bar {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    outline: none;
+}
+
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.icon-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.send-btn {
+    background: #000000;
+}
+
+.send-btn img {
+    filter: invert(1);
+}
+
+.mic-btn {
+    background: #000000;
+}
+
+.mic-btn img {
+    filter: invert(1);
+}
+
+.cancel-btn {
+    background: #000000;
+}
+
+.cancel-btn img {
+    filter: invert(1);
+}
+
+.icon-btn:hover {
+    transform: scale(1.08);
+}
+
+.listening {
+    background: #dc3545 !important;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255,0,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
+}

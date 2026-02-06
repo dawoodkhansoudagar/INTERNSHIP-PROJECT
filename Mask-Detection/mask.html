@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mask Detection</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+
+    <h1>Face Mask Detection</h1>
+
+    <button onclick="startDetection()" 
+        style="padding:15px 25px; font-size:18px; cursor:pointer;">
+        Start Face-Mask-Detection
+    </button>
+
+    <p id="status"></p>
+
+    <script>
+        function startDetection() {
+            document.getElementById("status").innerText = "Starting camera...";
+
+            fetch("http://127.0.0.1:5001/start-mask")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("status").innerText = data;
+                })
+                .catch(() => {
+                    document.getElementById("status").innerText = "Running!";
+                });
+        }
+    </script>
+
+</body>
+</html>

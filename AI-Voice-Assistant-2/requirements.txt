@@ -1,0 +1,8 @@
+flask
+speechrecognition
+pyaudio
+pyttsx3
+google-genai
+
+
+# Run this Command : pip install -r requirements.txt
